@@ -1,4 +1,4 @@
-import * as PIXI from 'pixi.js'
+import * as PIXI from 'pixi.js-legacy'
 
 type DirectionType = 'all' | 'x' | 'y'
 type UnderflowType = 'center' | 'top' | 'left' | 'right' | 'bottom' | (string & {})

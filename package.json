@@ -1,6 +1,6 @@
 {
     "name": "pixi-viewport",
-    "version": "4.15.0",
+    "version": "4.15.1",
     "description": "A highly configurable viewport/2D camera designed to work with pixi.js. Features include dragging, pinch-to-zoom, mouse wheel zooming, decelerated dragging, follow target, snap to point, snap to zoom, clamping, bouncing on edges, and move on mouse edges.",
     "main": "dist/viewport.js",
     "module": "dist/viewport.es.js",
@@ -49,13 +49,19 @@
     },
     "homepage": "https://github.com/davidfig/pixi-viewport#readme",
     "peerDependencies": {
-        "pixi.js": ">=4.6.0"
+        "pixi.js-legacy": ">=4.6.0"
     },
     "dependencies": {
+        "@babel/core": "^7.11.6",
+        "@babel/plugin-proposal-class-properties": "^7.10.4",
+        "@babel/plugin-proposal-decorators": "^7.10.5",
+        "@babel/preset-env": "^7.11.5",
+        "@babel/preset-typescript": "^7.10.4",
         "penner": "^0.1.3"
     },
     "devDependencies": {
         "@joseph184/rollup-plugin-node-builtins": "^2.1.4",
+        "@rollup/plugin-babel": "^5.2.1",
         "@rollup/plugin-commonjs": "^15.1.0",
         "@rollup/plugin-node-resolve": "^9.0.0",
         "@rollup/plugin-typescript": "^6.0.0",
@@ -68,7 +74,7 @@
         "jsdoc": "^3.6.3",
         "mocha": "^8.1.3",
         "pixi-ease": "^3.0.6",
-        "pixi.js": "^5.2.0",
+        "pixi.js-legacy": "^5.3.3",
         "raf": "^3.4.1",
         "rollup": "^2.28.2",
         "rollup-plugin-node-globals": "^1.4.0",
